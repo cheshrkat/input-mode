@@ -1,0 +1,47 @@
+body {
+    background: #fff;
+    color: #222;
+    font-family: sans-serif;
+    padding: 2rem 4rem;
+    font-size: 16px;
+}
+
+.demo {
+    font-size: 18px;
+    border: 2px solid #eee;
+    border-radius: 0.3rem;
+    padding: 2rem;
+}
+
+.demo h2 {
+    margin-top: 0;
+}
+
+code,
+#mode {
+    font-family: monospace;
+    background: #eee;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+}
+
+body:not([data-inputmode="mouse"]):body:not([data-inputmode="touch"])not([data-inputmode="keyboard"]) #mode:after {
+    content: 'not set';
+}
+
+[data-inputmode="mouse"] #mode:after {
+    content: 'mouse';
+}
+
+[data-inputmode="keyboard"] #mode:after {
+    content: 'keyboard';
+}
+
+[data-inputmode="touch"] #mode:after {
+    content: 'touch';
+}
+
+/* let's say outlines are suppressed because they look ugly... */
+[data-inputmode="mouse"] [tabindex="0"]:focus {
+    outline: none
+}

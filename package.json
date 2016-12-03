@@ -1,0 +1,17 @@
+{
+  "name": "Input-Mode",
+  "version": "0.1.0",
+  "description": "A script that detects if the user is primarily using the mouse or keyboard.",
+  "repository": "https://github.com/cheshrkat/input-mode/",
+  "main": "gruntfile.js",
+  "author": "Ben Buchanan",
+  "license": "SEE LICENSE IN LICENSE",
+  "devDependencies": {
+    "grunt": "1.0.x",
+    "grunt-contrib-clean": "1.0.x",
+    "grunt-contrib-copy": "1.0.x",
+    "grunt-contrib-uglify": "2.0.x",
+    "jit-grunt": "0.10.x",
+    "time-grunt": "1.4.x"
+  }
+}

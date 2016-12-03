@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+    <title>input mode</title>
+    <link rel="stylesheet" href="demo.css" />
+</head>
+<body>
+
+    <h1>Input Mode</h1>
+    <div class="demo">
+        <h2>Demo</h2>
+        <p>Input mode: <span id="mode"></span></p>
+        <div>
+            <label for="text1">Click this label, type something, then press tab:</label> 
+            <input type="text" id="text1" aria-describedby="extratext1">
+            <span tabindex="0" id="extratext1">This text should have an outline if you tab to it, but not if you click or tap it.</span>
+        </div>
+    </div>
+    <h2>Code and details</h2>
+    <p><a href="https://github.com/cheshrkat/input-mode/">https://github.com/cheshrkat/input-mode/</a></p>
+
+    <script type="text/javascript" src="input-mode.js"></script>
+    <script>
+    inputMode();
+    </script>
+</body>
+</html>

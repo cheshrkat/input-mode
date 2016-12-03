@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+    <title>input mode</title>
+    <link rel="stylesheet" href="../docs/demo.css" />
+    <style>
+    #test:after {
+        content: attr(data-foo);        
+    }
+    </style>
+</head>
+<body>
+
+    <div id="test">Test: </div>
+    <p>Should initialise in keyboard mode.</p>
+
+    <script type="text/javascript" src="../dist/input-mode.js"></script>
+    <script>
+    inputMode({
+        'element':  document.querySelector('#test'),
+        'attr':     'data-foo',
+        'delay':    1000,
+        'default':  'keyboard'
+    });
+    </script>
+</body>
+</html>
