@@ -1,5 +1,7 @@
 /**
- * inputMode
+ * inputMode. (c) Ben Buchanan, MIT license.
+ * https://github.com/cheshrkat/input-mode
+ *
  * @param {object} Pass all options as object.
  * @property {element} element - DOM element to apply the mode attribute to. Defaults to body element.
  * @property {string} attr - Attribute name to contain the mode strings. Defaults to data-inputmode

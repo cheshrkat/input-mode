@@ -1,5 +1,7 @@
 module.exports = function (grunt) {
 
+  var sourceFile = 'source/input-mode.js';
+
   // JIT avoids the need to specify every plugin
   // and speeds things up quite a bit
   require('jit-grunt')(grunt);
@@ -13,7 +15,6 @@ module.exports = function (grunt) {
 
     // JavaScript
     uglify: {
-
       options: {
         banner: '/*! Input Mode v<%= pkg.version %>, <%= grunt.template.today("yyyy-mm-dd") %>. MIT license. github.com/cheshrkat/input-mode */\n',
         preserveComments: function(node, comment) {
@@ -22,7 +23,7 @@ module.exports = function (grunt) {
         mangle: true
       },
       build: {
-        src: 'source/input-mode.js',
+        src: sourceFile,
         dest: 'dist/input-mode.min.js'
       }
     },
@@ -31,13 +32,7 @@ module.exports = function (grunt) {
     copy: {
       dist: {
         files: [
-          { 
-            expand: true, 
-            flatten: true, 
-            src: ['source/input-mode.js'], 
-            dest: 'dist/', 
-            filter: 'isFile'
-          }
+          { src: sourceFile, dest: 'docs/', expand: true, flatten: true, filter: 'isFile' }
         ]
       }
     },
