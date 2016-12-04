@@ -46,7 +46,7 @@ Use the attribute as a scoping CSS selector. For example, while in mouse mode yo
 
 <code>[data-inputmode="mouse"] [tabindex="0"]:focus { outline: none }</code>
 
-It is better to remove things that you know you don't want, rather than suppress things you need and try to put them back later. 
+It is better to remove things that you know you don't want, rather than suppress things you need and try to put them back later. Also you really want to avoid changing any style that affects layout. Ideally just stick to `outline` which won't make the page jump around.
 
 Input Mode is intended for use in cases where mouse users are seeing extraneous affordances; or keyboard users need additional affordances; AND no other option is available.
 
