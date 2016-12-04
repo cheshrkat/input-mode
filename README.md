@@ -16,6 +16,8 @@ It's a classic accessibility vs design situation: you want to put good keyboard 
 
 So what to do? The mouse user really doesn't need these things, they've already worked out they can click. But the keyboard users desperately need them. Hence detecting input mode.
 
+Note: this is not the first implementation of the idea. The goal here is to create a generalised, sharable implementation.
+
 ## Setup and usage
 
 1. Import `dist/input-mode.min.js` in your project.
