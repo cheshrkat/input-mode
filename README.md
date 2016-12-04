@@ -2,9 +2,9 @@
 
 Input Mode is a script which detects mouse movements, pointer events and key presses; then sets a data attribute on the body element to indicate mouse or keyboard mode (it does detect touch to some degree but this has not been heavily tested).
 
-The point is you can style separately for mouse and keyboard use.
+The point is you can style separately for mouse and keyboard use. The specific goal was to create a way to suppress keyboard affordances on elements that had been clicked. Examples: an extra message attached to a form input using div with `aria-describedby` and `tabindex` set; and a navigation item that was producing an oversized focus box in Firefox.
 
-**Caveat: This is an experimental technique and there could be unforseen side effects.** Please test your implementation carefully.
+**Caveat: This is an experimental technique and there could be unforseen side effects.** Please test your implementation carefully. Issues and pull requests are welcome.
 
 ## Demo
 
